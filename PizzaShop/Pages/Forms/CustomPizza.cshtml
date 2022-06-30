@@ -1,0 +1,67 @@
+﻿@page
+@model PizzaShop.Pages.Forms.CustomPizzaModel
+@{
+}
+
+<div class="text-center container">
+
+
+    <div class="card">
+        <div class="card-header">
+            <h1>Create Your Own Pizza!</h1>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <label text-align:float-left;>Pizza Name</label>
+                <input type="text" class="form-control" asp-for="Pizza.PizzaName" placeholder="Give your pizza a name..." />
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.TomatoSauce" placeholder="Tomato Sauce" />
+                    <label class="checkbox-inline">Tomato Sauce</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Cheese" />
+                    <label class="checkbox-inline">Cheese</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Peperoni" />
+                    <label class="checkbox-inline">Peperoni</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Mushroom" />
+                    <label class="checkbox-inline">Mushroom</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Tuna" />
+                    <label class="checkbox-inline">Tuna</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Pineapple" />
+                    <label class="checkbox-inline">Pineapple </label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Ham" />
+                    <label class="checkbox-inline">Ham</label>
+                </div>
+
+                <div class="input-group input-group-sm">
+                    <input type="checkbox" class="form-check" asp-for="Pizza.Beef" />
+                    <label class="checkbox-inline">Beef</label>
+                </div>
+
+                <button class="btn btn-primary mt-1" type="submit">Order My Pizza!!!</button>
+            </form>
+        </div>
+        <div class="card-footer">
+        </div>
+    </div>
+
+
+
+</div>

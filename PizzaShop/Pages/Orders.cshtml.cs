@@ -1,0 +1,24 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using PizzaShop.Data;
+using PizzaShop.Models;
+
+namespace PizzaShop.Pages
+{
+    public class OrdersModel : PageModel
+    {
+        public List<PizzaOrderModel> PizzaOrders = new List<PizzaOrderModel>();
+
+        private readonly ApplicationDbContext _context;
+
+        public OrdersModel(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public void OnGet()
+        {
+            PizzaOrders = _context.PizzaOrders.ToList();
+        }
+    }
+}
